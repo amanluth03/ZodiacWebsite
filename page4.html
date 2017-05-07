@@ -1,0 +1,20 @@
+<canvas id="creditsScreeen" width="2000" height="2000" style="display:block;" onclick="drawTitle()">
+			<script>
+			var creditsCanvas = document.getElementById("creditsScreeen");
+
+			var creditsContext = creditsCanvas.getContext("2d");
+			creditsContext.fillStyle = "black";
+			creditsContext.fillRect(0,0,2000,2000);
+			creditsContext.fillStyle = "white";
+			creditsContext.font="120px Arial";
+			creditsContext.fillText("Coded  by: Aman Luthra",100,100);
+			
+			var drawCredits = function() {
+				titleCanvas.style.display="none"
+				gameCanvas.style.display="none"
+				creditsCanvas.style.display="block"
+				document.getElementById("video").style.display="none";
+}
+			</script>
+		This text is displayed if your browser does not support HTML5 Canvas.
+	</canvas>
